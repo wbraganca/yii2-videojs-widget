@@ -1,5 +1,10 @@
 yii2-videojs-widget
-=====================
+===================
+
+[![Latest Version](https://img.shields.io/github/release/wbraganca/yii2-videojs-widget.svg?style=flat-square)](https://github.com/wbraganca/yii2-videojs-widget/releases)
+[![Software License](http://img.shields.io/badge/license-BSD3-brightgreen.svg?style=flat-square)](LICENSE.md)
+[![Total Downloads](https://img.shields.io/packagist/dt/wbraganca/yii2-videojs-widget.svg?style=flat-square)](https://packagist.org/packages/wbraganca/yii2-videojs-widget)
+
 The yii2-videojs-widget is a Yii 2 wrapper for the [video.js](http://www.videojs.com/). A JavaScript and CSS library that makes it easier to work with and build on HTML5 video. This is also known as an HTML5 Video Player.
 
 Installation
@@ -10,13 +15,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist wbraganca/yii2-videojs-widget "*"
+php composer.phar require --prefer-dist wbraganca/yii2-videojs-widget "~1.0"
 ```
 
 or add
 
 ```
-"wbraganca/yii2-videojs-widget": "*"
+"wbraganca/yii2-videojs-widget": "~1.0"
 ```
 
 to the require section of your `composer.json` file.
