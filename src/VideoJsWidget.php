@@ -58,7 +58,8 @@ class VideoJsWidget extends \yii\base\Widget
     public function registerAssets()
     {
         $view = $this->getView();
-        $obj = VideoJsAsset::register($view);
+        VideoJsAsset::register($view);
+        VideoJsYoutubeAsset::register($view);
 
         echo "\n" . Html::beginTag('video', $this->options);
         if (!empty($this->tags) && is_array($this->tags)) {

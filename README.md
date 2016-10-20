@@ -84,3 +84,31 @@ Example 2 - Real Time Messaging Protocol (RTMP)
 ?>
 
 ```
+
+Example 3 - Youtube video playback
+
+```php
+<?php
+    echo \wbraganca\videojs\VideoJsWidget::widget([
+        'options' => [
+            'class' => 'video-js vjs-default-skin vjs-big-play-centered',
+            'controls' => true,
+            'preload' => 'auto',
+            'width' => '420',
+            'height' => '315',
+            'data' => [
+                'setup' => [
+                    'autoplay' => true,
+                    'techOrder' => ['youtube']
+                ],
+            ],
+        ],
+        'tags' => [
+            'source' => [
+                ['src' => 'https://www.youtube.com/watch?v=xjS6SftYQaQ', 'type' => 'video/youtube']
+            ]
+        ]
+    ]);
+?>
+
+```
